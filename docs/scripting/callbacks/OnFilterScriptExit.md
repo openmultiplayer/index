@@ -1,13 +1,12 @@
 ---
 title: OnFilterScriptExit
-description: This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.
-
+description: This callback is called when a filterscript is unloaded.
 tags: []
 ---
 
 ## Description
 
-Ang callback na ito ay natatawag kapag ang filterscript ay in-unload sa server.
+This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.
 
 ## Examples
 
@@ -21,4 +20,8 @@ public OnFilterScriptExit()
 }
 ```
 
-## Mga Kaugnay na Functions
+## Related Callbacks
+
+- [OnFilterScriptInit](OnFilterScriptInit): Called when a filterscript is loaded.
+- [OnGameModeInit](OnGameModeInit): Called when a gamemode starts.
+- [OnGameModeExit](OnGameModeExit): Called when a gamemode ends.

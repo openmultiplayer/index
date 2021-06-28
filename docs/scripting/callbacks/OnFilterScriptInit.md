@@ -20,4 +20,8 @@ public OnFilterScriptInit()
 }
 ```
 
-## Related Functions
+## Related Callbacks
+
+- [OnFilterSciptExit](OnFilterScriptExit): Called when a filterscript is unloaded.
+- [OnGameModeInit](OnGameModeInit): Called when a gamemode starts.
+- [OnGameModeExit](OnGameModeExit): Called when a gamemode ends.

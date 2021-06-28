@@ -40,4 +40,8 @@ public OnPlayerConnect(playerid)
 
 <TipNPCCallbacks />
 
-## Related Functions
+## Related Callbacks
+
+- [OnPlayerDisconnect](OnPlayerDisconnect): Called when a player leaves the server. 
+- [OnIncomingConnection](OnIncomingConnection): Called when a player is attempting to connect to the server. 
+- [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models. 
