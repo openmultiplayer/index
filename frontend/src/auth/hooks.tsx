@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 
 import { apiSSP, apiSWR } from "src/fetcher/fetcher";
-import { APIError } from "src/types/error";
-import { UserModel } from "src/types/user";
+import { APIError } from "src/types/generated_error";
+import { UserModel } from "src/types/generated_user";
 
 type AuthenticationContext = {
   isAuthenticated: boolean;

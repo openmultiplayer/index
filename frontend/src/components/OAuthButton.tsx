@@ -1,9 +1,9 @@
 import useSWR from "swr";
 
 import { apiSWR } from "src/fetcher/fetcher";
-import { GitHubLink } from "src/types/githubAuth";
-import { UserModel } from "src/types/user";
-import { APIError } from "src/types/error";
+import { GitHubLink } from "src/types/generated_githubAuth";
+import { UserModel } from "src/types/generated_user";
+import { APIError } from "src/types/generated_error";
 
 type Props = {
   bg: string;

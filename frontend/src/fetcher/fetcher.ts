@@ -1,6 +1,6 @@
 import { GetServerSidePropsContext } from "next";
 
-import { APIError } from "src/types/error";
+import { APIError } from "src/types/generated_error";
 import { Result } from "./result";
 
 // TODO: Switch based on dev/prod or load from env vars

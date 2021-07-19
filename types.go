@@ -34,7 +34,7 @@ func convert(prefix, out string, objs ...interface{}) {
 		t.Add(i)
 	}
 
-	if err := t.ConvertToFile("frontend/src/types/" + out + ".ts"); err != nil {
+	if err := t.ConvertToFile("frontend/src/types/generated_" + out + ".ts"); err != nil {
 		panic(err.Error())
 	}
 }

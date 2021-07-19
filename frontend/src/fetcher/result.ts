@@ -1,4 +1,4 @@
-import { APIError } from "src/types/error";
+import { APIError } from "src/types/generated_error";
 
 interface ResultValue<T> {
   result: "value";

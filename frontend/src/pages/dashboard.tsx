@@ -1,11 +1,11 @@
 import useSWR from "swr";
 
 import { withAuth } from "src/auth/hoc";
-import { UserModel } from "src/types/server";
+import { UserModel } from "src/types/generated_server";
 import { apiSWR } from "src/fetcher/fetcher";
 import GitHubIcon from "src/components/icons/GitHub";
 import DiscordIcon from "src/components/icons/Discord";
-import { APIError } from "src/types/error";
+import { APIError } from "src/types/generated_error";
 import OAuthButton from "src/components/OAuthButton";
 
 const placeholder = (idx: string, data: any, error?: APIError): JSX.Element => {
