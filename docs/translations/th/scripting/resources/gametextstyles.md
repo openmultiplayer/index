@@ -45,40 +45,24 @@ Be careful, using too many text colors or special characters in one gametext may
 
 :::
 
+
 ## Text Styles
 
-### Style 0
-
-![GameTextStyle0](/images/gameTextStyles/style0.png)
-
-**Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen.**
-
-### Style 1
-
-![GameTextStyle1](/images/gameTextStyles/style1.png)
-
-**Fades out after 8 seconds, regardless of time set. If you have a time setting longer than that, it will re-appear after fading out and repeat until the time ends.**
-
-### Style 2
-
-![GameTextStyle2](/images/gameTextStyles/style2.png)
-
-**Does not disappear until the player respawns.**
-
-### Style 3
-
-![GameTextStyle3](/images/gameTextStyles/style3.png)
-
-### Style 4
-
-![GameTextStyle4](/images/gameTextStyles/style4.png)
-
-### Style 5
-
-![GameTextStyle5](/images/gameTextStyles/style5.png)
-
-**Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed'.**
-
-### Style 6
-
-![GameTextStyle6](/images/gameTextStyles/style6.png)
+| Style   | Preview                                | Description                                                                                                                                                        |
+| ------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Style 0 | ![](/images/gameTextStyles/style0.png) | Appears for 9 seconds regardless of time setting. Hides textdraws and any other gametext on screen.  Fixed in fixes.inc.                                                                |
+| Style 1 | ![](/images/gameTextStyles/style1.png) | Fades out after 8 seconds, regardless of time set. If you have a time setting longer than that, it will re-appear after fading out and repeat until the time ends.  Fixed in fixes.inc. |
+| Style 2 | ![](/images/gameTextStyles/style2.png) | N/A                                                                                                                                                                |
+| Style 3 | ![](/images/gameTextStyles/style3.png) | N/A                                                                                                                                                                |
+| Style 4 | ![](/images/gameTextStyles/style4.png) | N/A                                                                                                                                                                |
+| Style 5 | ![](/images/gameTextStyles/style5.png) | Displays for 3 seconds, regardless of what time you set. Will refuse to be shown if it is 'spammed'.  Fixed in fixes.inc.                                                               |
+| Style 6 | ![](/images/gameTextStyles/style6.png) | N/A                                                                                                                                                                |
+| Style 7 | ![](/images/gameTextStyles/style7.png) | Based on SA vehicle names.  Added by fixes.inc                                                                                                                                                               |
+| Style 8 | ![](/images/gameTextStyles/style8.png) | Based on SA location names.  Added by fixes.inc                                                                                                                                                               |
+| Style 9 | ![](/images/gameTextStyles/style9.png) | Based on SA radio station names (once selected).  Added by fixes.inc                                                                                                                                                               |
+| Style 10 | ![](/images/gameTextStyles/style10.png) | Based on SA radio station names (while switching).  Added by fixes.inc                                                                                                                                                               |
+| Style 11 | ![](/images/gameTextStyles/style11.png) | Based on SA positive money.  Added by fixes.inc                                                                                                                                                               |
+| Style 12 | ![](/images/gameTextStyles/style12.png) | Based on SA negative money.  Added by fixes.inc                                                                                                                                                               |
+| Style 13 | ![](/images/gameTextStyles/style13.png) | Based on SA stunt bonuses.  Added by fixes.inc                                                                                                                                                               |
+| Style 14 | ![](/images/gameTextStyles/style14.png) | Based on SA in-game clock.  Added by fixes.inc                                                                                                                                                               |
+| Style 15 | ![](/images/gameTextStyles/style15.png) | Based on SA notification popup.  Added by fixes.inc                                                                                                                                                               |
