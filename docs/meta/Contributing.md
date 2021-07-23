@@ -5,7 +5,7 @@ description: How to contribute to the SA-MP Wiki and open.mp documentation.
 
 This documentation source is open for anyone to contribute changes to! All you need is a [GitHub](https://github.com) account and some spare time. You don't even need to know Git, you can do it all from the web interface!
 
-If you want to help maintain a specific language, open a PR against the [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) file and add a line for your language directory with your username.
+If you want to help maintain a specific language, open a PR against the [`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS) file and add a line for your language directory with your username.
 
 ## Editing Content
 
@@ -13,7 +13,7 @@ On each page, there's a button that takes you to the GitHub page for editing:
 
 ![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
-For example, clicking this on [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) takes you to [this page](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) which presents you with a text editor to make changes to the file (assuming you're logged in to GitHub).
+For example, clicking this on [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) takes you to [this page](https://github.com/openmultiplayer/web/blob/master/docs/scripting/functions/SetVehicleAngularVelocity.md) which presents you with a text editor to make changes to the file (assuming you're logged in to GitHub).
 
 Make your edit and submit a "Pull Request" this means the Wiki maintainers and other community members can review your change, discuss whether it needs additional changes and then merge it.
 

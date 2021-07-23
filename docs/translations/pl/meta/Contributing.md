@@ -5,7 +5,7 @@ description: Jak wnieść swój wkład do SA-MP Wiki i dokumentacji open.mp.
 
 Kod źródłowy tej dokumentacji jest dostępny dla każdego, kto chce wnieść jakiekolwiek zmiany! Wszystko czego potrzebujesz to konto na [GitHubie](https://github.com) i trochę wolnego czasu. Nie musisz znać obsługi systemu Git, wszystko możesz zrobić przez wersję przeglądarkową!
 
-Jeżeli chcesz zaopiekować się konkretnym językiem, otwórz PR do pliku [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) i dodaj linię dla katalogu Twojego języka wraz ze swoją nazwą użytkownika.
+Jeżeli chcesz zaopiekować się konkretnym językiem, otwórz PR do pliku [`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS) i dodaj linię dla katalogu Twojego języka wraz ze swoją nazwą użytkownika.
 
 ## Edycja treści
 
@@ -13,7 +13,7 @@ Na każdej stronie widoczny jest przycisk, który przenosi Cię do jej edycji na
 
 ![Link „Edit this page” obecny na każdej podstronie wiki](/images/contributing/edit-this-page.png)
 
-Na przykład, kliknięcie go na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) przeniesie Cię do [tej strony](https://github.com/openmultiplayer/wiki/edit/master/docs/translations/pl/scripting/functions/SetVehicleAngularVelocity.md), na której dostępny jest edytor tekstowy umożliwiający wprowadzenie zmian do pliku (zakładając, że jesteś zalogowany do GitHuba).
+Na przykład, kliknięcie go na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) przeniesie Cię do [tej strony](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md), na której dostępny jest edytor tekstowy umożliwiający wprowadzenie zmian do pliku (zakładając, że jesteś zalogowany do GitHuba).
 
 Wprowadź swoje zmiany i wyślij „Pull Request”, który umożliwi opiekunom Wiki oraz innym członkom społeczności na przegląd Twoich zmian, dyskusję na temat ewentualnych dodatkowych zmian, a ostatecznie ich wdrożenie.
 

@@ -27,9 +27,9 @@ public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 0.5;
-    result = acos (param) * 180.0 / PI;
-    printf ("The arc cosine of %f is %f degrees.\n", param, result);
-    return 0;
+    result = acos(param);
+    printf("The arc cosine of %f is %f degrees.", param, result);
+    return 1;
 }
 ```
 

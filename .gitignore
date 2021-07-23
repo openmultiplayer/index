@@ -7,3 +7,4 @@ openmp.sublime-workspace
 openmp.sublime-project
 *.bleve
 *.db
+prisma/Studio/

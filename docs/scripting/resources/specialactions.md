@@ -1,11 +1,11 @@
 ---
 title: Special Actions
-description: A list of all the player special actions to be used with the [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction) function.
+description: A list of all the player special actions to be used with the [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction) and [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction) functions.
 tags: ["player"]
 sidebar_label: Special Actions
 ---
 
-This page compiles the list of all the player special actions to be used with the [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction) function. Both pages contain examples on how to use the values below.
+This page compiles the list of all the player special actions to be used with the [GetPlayerSpecialAction](../functions/GetPlayerSpecialAction) and [SetPlayerSpecialAction](../functions/SetPlayerSpecialAction) functions. Both pages contain examples on how to use the values below.
 
 ## Special Actions
 

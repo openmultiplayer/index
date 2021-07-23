@@ -5,7 +5,7 @@ description: SA-MP ve open.mp wikisine katkıda bulunmak istiyorsanız bu başl�
 
 Bu dökümantasyon kaynağı katkıda bulunmak isteyen herkese açıktır. İhtiyacınız olan şeyler [GitHub](https://github.com) üzerinden bir hesap ve birazcık boş zaman. Git'i bilmenize gerek yok, giriş yaptığınız arayüz web arayüzünden her şeyi yapabilirsiniz.
 
-Belirli bir dilin sayfasını yaratmak istiyorsanız, [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) dosyasına diliniz ve kullanıcı adınızı içeren bir satır yazın. (TR sayfalarını geliştirecekseniz bu sayfayı düzenlemenize gerek yok).
+Belirli bir dilin sayfasını yaratmak istiyorsanız, [`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS) dosyasına diliniz ve kullanıcı adınızı içeren bir satır yazın. (TR sayfalarını geliştirecekseniz bu sayfayı düzenlemenize gerek yok).
 
 ## İçerik Düzenlemek
 
@@ -13,7 +13,7 @@ Her sayfada düzenleme yapabilmek Github düzenleme sayfasına yönlendiren buto
 
 ![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
-Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [bu sayfa](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
+Örneğin, [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) bu tıklatma [bu sayfa](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) sizi bu dosya üzerinde değişiklik yapmanız için yönlendirir. (eğer ki github üzerinden oturum açtıysanız).
 
 Düzenlemenizi yapın ve bir "Pull Request" gönderin. Wiki üzerinde çalışan takım üyeleri yaptığınız değişiklikleri onaylandığında(incelenmesi ardından) yaptığınız değişiklikler yayınlanır.
 

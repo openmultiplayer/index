@@ -1,6 +1,6 @@
 ---
 title: PlayCrimeReportForPlayer
-description: Ova funkcija će pokrenuti izvještaj o zločinu za igrača - kao i u single-player-u kada CJ počin zločin.
+description: Ova funkcija reproducira prijavu zločina za igrača - baš kao i kod jednog igrača kada CJ počini zločin.
 tags: ["player"]
 ---
 
@@ -12,19 +12,19 @@ Ova funkcija je dodana u SA-MP 0.3a i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Ova funkcija pokreće izvještaj o zločinu za igrača - kao i u single-player-u kada CJ počini zločin.
+Ova funkcija reproducira prijavu zločina za igrača - baš kao i kod jednog igrača kada CJ počini zločin.
 
-| Ime       | Deskripcija                                                                                                               |
-| --------- | ------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | ID igrača koji će čuti izvještaj o zločinu                                                                                |
-| suspectid | ID osumljičenog igrača koji će biti opisan u izvještaju o zločinu                                                         |
-| crimeid   | [crime ID](../resources/crimelist), koji će biti prijavljen kao 10-code (to jeste 10-16 ako je 16 prošao kao crimeid)     |
+| Ime       | Deskripcija                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------- |
+| playerid  | ID igrača koji će čuti prijavu zločina (crime report)..                                                          |
+| suspectid | ID osumnjičeni igrač koji će biti opisan u krivičnoj prijavi.                                                    |
+| crimeid   | [Crime ID](../resources/crimelist), koji će biti prijavljen kao 10-kod (tj. 10-16 ako je 16 donesen kao zločin). |
 
 ## Returns
 
-1: Funckija je uspješno izvršena.
+1: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. To znači da određeni igrač ne postoji.
+0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
 ## Primjeri
 
@@ -34,7 +34,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
     if (!strcmp(cmdtext, "/suspect"))
     {
         PlayCrimeReportForPlayer(playerid, 0, 16);
-        SendClientMessage(playerid, 0xFFFFFFFF, "ID 0 je počinio zločin (10-16).");
+        SendClientMessage(playerid, 0xFFFFFFFF, "ID 0 je napravio zločin (10-16).");
         return 1;
     }
     return 0;
@@ -43,4 +43,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Srodne Funkcije
 
-- [PlayerPlaySound](PlayerPlaySound): Puštanje zvuka za igrača.
+- [PlayerPlaySound](PlayerPlaySound): Reprodukujte zvuk za igrača.

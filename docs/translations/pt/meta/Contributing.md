@@ -11,7 +11,7 @@ Em cada página há um botão que o(a) leverá para uma página no GitHub para e
 
 ![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
-Por exemplo, clicando em [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) o(a) levará para [esta página](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) a qual contém um editor de texto para fazer algumas mudanças no arquivo(assumindo que você esteja logado(a) no GitHub).
+Por exemplo, clicando em [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) o(a) levará para [esta página](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) a qual contém um editor de texto para fazer algumas mudanças no arquivo(assumindo que você esteja logado(a) no GitHub).
 
 Faça suas edições e envie um "Pull Request", isso significa que os organizadores da Wiki e outros membros da comunidade irão revisar suas mudanças, discutir se são necessárias então incorporá-las ou não.
 

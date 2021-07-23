@@ -5,7 +5,7 @@ description: Kako doprinijeti SA-MP Wiki i open.mp dokumentaciji.
 
 Ovaj izvor dokumentacije otvoren je za sve za doprinos promjenama! Sve što trebate je [GitHub](https://github.com) nalog i malo slobodnog vremena. Čak ne morate da znate Git, sve to možete uraditi preko web sučelja!
 
-Ako želite pomoći u održavanju određenog jezika, otvorite _pull request_(PR) na [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) fajl i dodajte novu liniju sa direktorijumom vašeg jezika sa vašim korisničkim imenom.
+Ako želite pomoći u održavanju određenog jezika, otvorite _pull request_(PR) na [`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS) fajl i dodajte novu liniju sa direktorijumom vašeg jezika sa vašim korisničkim imenom.
 
 ## Uređivanje Sadržaja
 
@@ -13,7 +13,7 @@ Na svakoj stranici nalazi se dugme koje vas dovodi na GitHub stranicu za uređiv
 
 ![Uredi ovu stranicu](/images/contributing/edit-this-page.png)
 
-Naprimjer, Ukoliko kliknete ovo dugme na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) odvesti će vas na [ovu stranicu](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) koji vam nudi uređivač teksta kako biste mogli napraviti promjene u fajlu (Pod pretpostavkom da ste prijavljeni na vaš GitHub račun).
+Naprimjer, Ukoliko kliknete ovo dugme na [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) odvesti će vas na [ovu stranicu](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) koji vam nudi uređivač teksta kako biste mogli napraviti promjene u fajlu (Pod pretpostavkom da ste prijavljeni na vaš GitHub račun).
 
 Uredi ga i postavi "Pull Request" , to znači da će Wiki održavatelji i ostali članovi zajednice pregledati vašu izmjenu, diskutovati o tome da li su potrebne dodatne izmjene i onda spojiti to.
 

@@ -21,15 +21,13 @@ Odwrócona wartość arcus tangensa w radianach.
 ## Examples
 
 ```c
-//Ta funkcja zwraca radiany. Większość funkcji SA-MP używa stopni, dlatego zaleca się skonwertować je używając wzoru: result = atan (param) * 180 / PI
-
 public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 1.0;
-    result = atan(param) * 180 / 3.14159265; //1 radian to 180 stopni. 3.14... to liczba Pi.
-    printf ("Arcus tangens dla %f wynosi %f stopni\n", param, result );
-    return 0;
+    result = atan(param);
+    printf("Arcus tangens dla %f wynosi %f stopni.", param, result);
+    return 1;
 }
 ```
 

@@ -1,4 +1,4 @@
-import visit from "unist-util-visit";
+import { visit } from "unist-util-visit";
 
 // Remark plugin for colours.
 // Usage:

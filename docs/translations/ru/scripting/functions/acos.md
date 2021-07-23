@@ -1,22 +1,22 @@
 ---
 title: acos
-description: .
-tags: []
+description: Get the inversed value of a cosine in degrees.
+tags: ["math"]
 ---
 
 <LowercaseNote />
 
 ## Description
 
-Get the inversed value of an arc cosine in radians.
+Get the inversed value of a cosine in degrees. In trigonometrics, arc cosine is the inverse operation of cosine.
 
-| Name        | Description              |
-| ----------- | ------------------------ |
-| Float:value | the input in arc cosine. |
+| Name        | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| Float:value | value whose arc cosine is computed, in the interval [-1,+1]. |
 
 ## Returns
 
-Principal arc cosine of x, in the interval [0, pi] radians. One radian is equivalent to 180/PI degrees.
+The angle in degrees, in the interval [0.0,180.0].
 
 ## Examples
 
@@ -27,14 +27,17 @@ public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 0.5;
-    result = acos (param) * 180.0 / PI;
-    printf ("The arc cosine of %f is %f degrees.\n", param, result);
-    return 0;
+    result = acos(param);
+    printf("The arc cosine of %f is %f degrees.", param, result);
+    return 1;
 }
 ```
 
 ## Related Functions
 
-- [floatsin](floatsin.md): Get the sine from a specific angle.
-- [floatcos](floatcos.md): Get the cosine from a specific angle.
-- [floattan](floattan.md): Get the tangent from a specific angle.
+- [floatsin](floatsin): Get the sine from a specific angle.
+- [floatcos](floatcos): Get the cosine from a specific angle.
+- [floattan](floattan): Get the tangent from a specific angle.
+- [asin](asin): Get the inversed value of a sine in degrees.
+- [atan](atan): Get the inversed value of a tangent in degrees.
+- [atan2](atan2): Get the multi-valued inversed value of a tangent in degrees.

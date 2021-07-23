@@ -14,7 +14,7 @@ Gets the type (integer, float or string) of a server variable.
 
 ## Returns
 
-Returns the type of the SVar. See table below.
+Returns the [type](../resources/svartypes) of the SVar.
 
 ## Examples
 

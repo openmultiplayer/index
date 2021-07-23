@@ -5,7 +5,7 @@ description: 如何贡献SA-MP维基和open.mp文档。
 
 本文档的源代码是开放的，任何人都可以对其进行修改！你所需要的只是一个[GitHub](https://github.com)账户和一些空闲时间。你甚至不必了解 Git，您可以通过网页界面可以做到这一切！
 
-如果您想帮助维护一种特定的语言，打开针对 [`代码的所有者`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) 文件的 拉取请求，并添加一行内容为语言目录和您的用户名。
+如果您想帮助维护一种特定的语言，打开针对 [`代码的所有者`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS) 文件的 拉取请求，并添加一行内容为语言目录和您的用户名。
 
 ## 编辑内容
 
@@ -13,7 +13,7 @@ description: 如何贡献SA-MP维基和open.mp文档。
 
 ![编辑每个维基页面上的这个页面链接](/images/contributing/edit-this-page.png)
 
-例如, 点击 [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) 跳转到 [这个页面](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) 它提供一个文本编辑器来修改文件 (假设你已经登录了 Github)。
+例如, 点击 [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) 跳转到 [这个页面](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) 它提供一个文本编辑器来修改文件 (假设你已经登录了 Github)。
 
 这意味着维基维护者和其他社区成员可以审查你的修改，讨论是否需要额外的修改，然后合并它。
 

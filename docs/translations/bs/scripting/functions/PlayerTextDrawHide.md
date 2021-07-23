@@ -1,6 +1,6 @@
 ---
 title: PlayerTextDrawHide
-description: Sakrivanje player-textdrawa igraču za kojeg je prethodno bio kreiran.
+description: Sakrij player-textdraw za igrača kojem je kreiran.
 tags: ["player", "textdraw", "playertextdraw"]
 ---
 
@@ -12,16 +12,16 @@ Ova je značajka (player-textdraws) dodana u SA-MP 0.3e i neće raditi u ranijim
 
 ## Deskripcija
 
-Hide a player-textdraw from the player it was created for
+Sakrij player-textdraw za igrača kojem je kreiran.
 
-| Ime      | Deskripcija                        |
-| -------- | ---------------------------------- |
-| playerid | ID igrača kojem sakrivamo textdraw |
-| text     | ID textdraw kojeg sakrivamo        |
+| Ime      | Deskripcija                    |
+| -------- | ------------------------------ |
+| playerid | ID igrača za sakriti textdraw. |
+| text     | ID textdrawa za sakriti.       |
 
 ## Returns
 
-Sakrivanje player-textdrawa igraču za kojeg je prethodno bio kreiran.
+Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 ## Primjeri
 
@@ -35,7 +35,7 @@ public OnPlayerDisconnect(playerid)
 ## Srodne Funkcije
 
 - [PlayerTextDrawShow](PlayerTextDrawShow): Prikaži player-textdraw.
-- [CreatePlayerTextDraw](CreatePlayerTextDraw): Kreiranje player-textdrawa.
+- [CreatePlayerTextDraw](CreatePlayerTextDraw): Kreiraj player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Uništi player-textdraw.
 - [PlayerTextDrawColor](PlayerTextDrawColor): Postavi boju teksta u player-textdrawu.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Postavi boju box-a od player-textdrawa.
@@ -44,8 +44,8 @@ public OnPlayerDisconnect(playerid)
 - [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Postavi veličinu slova u tekstu player-textdrawa.
 - [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za PlayerTextDrawSetSelectable).
-- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): (Ne) Koristi outline za player-textdraw.
+- [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Omogući/onemogući korišćenje outline-a za player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Postavi sjenu na player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Razmjeri razmak teksta u player-textdrawu na proporcionalni omjer.
-- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): (Ne) Koristi box na player-textdrawu.
+- [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Omogući/onemogući korišćenje box-a za player-textdraw.
 - [PlayerTextDrawSetString](PlayerTextDrawSetString): Postavi tekst player-textdrawa.

@@ -1,5 +1,5 @@
 ---
-title: Constnts
+title: Constants
 description: A list of all standard library constant definitions.
 tags: []
 ---

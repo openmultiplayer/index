@@ -35,7 +35,7 @@ password whatever
 
 ### Logging In
 
-You can log in either while ingame by typing `/rcon login password` or out of game by using the RCON mode in the [Remote Console](remoteconsole).
+You can log in either while ingame by typing `/rcon login password` or out of game by using the RCON mode in the [Remote Console](RemoteConsole).
 
 The password is the same as what you set it as in [server.cfg](server.cfg)
 
@@ -61,7 +61,7 @@ Where `IP_HERE` is, is where you put the IP you would like to ban.
 
 ##### Ban() function
 
-The [Ban](../../functions/Ban) function can be used to ban a player from a script. The [BanEx](../../functions/BanEx) function will add an optional reason like so:
+The [Ban](../scripting/functions/Ban) function can be used to ban a player from a script. The [BanEx](../scripting/functions/BanEx) function will add an optional reason like so:
 
 ```
 13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
@@ -109,7 +109,7 @@ samp.ban can be found in your sa-mp server directory, it contains lines with the
 - IP
 - Date
 - Time
-- Name (Name of person or a reason (see [BanEx](../../functions/BanEx)))
+- Name (Name of person or a reason (see [BanEx](../scripting/functions/BanEx)))
 - Type of ban (INGAME, IP BAN etc,)
 
 Examples:
@@ -151,34 +151,34 @@ Type cmdlist for commands (or, varlist for variables) making use of the RCON in-
 
 These are the functions that you as admin can use:
 
-| Command                           | Description                                                                                                                    |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `/rcon cmdlist`                   | Shows a list with commands.                                                                                                    |
-| `/rcon varlist`                   | Shows a list with the current variables.                                                                                       |
-| `/rcon exit`                      | Closes the server.                                                                                                             |
-| `/rcon echo [text]`               | Shows the `[text]` in the console of the server (NOT the client-console in-game).                                              |
-| `/rcon hostname [name]`           | change the hostname text (_example: /rcon hostname my server_).                                                                |
-| `/rcon gamemodetext [name]`       | change the gamemode text (_example: /rcon gamemodetext my gamemode_).                                                          |
-| `/rcon mapname [name]`            | change the map name text (_example: /rcon mapname San Andreas_).                                                               |
-| `/rcon exec [filename]`           | Executes the file which contains server cfg (_example: /rcon exec blah.cfg_).                                                  |
-| `/rcon kick [ID]`                 | Kick the player with the given ID (_example: /rcon kick 2_).                                                                   |
-| `/rcon ban [ID]`                  | Ban the player with the given ID (_example: /rcon ban 2_).                                                                     |
-| `/rcon changemode [mode]`         | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_). |
-| `/rcon gmx`                       | Will load the next gamemode in [server.cfg](server.cfg).                                                                       |
-| `/rcon reloadbans`                | reloads the samp.ban where the banned IP addresses are stored. Should be used after unbanning and IP address.                  |
-| `/rcon reloadlog`                 | reloads the server_log.txt. Has no noticeable effect on anything.                                                              |
-| `/rcon say`                       | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`).                 |
-| `/rcon players`                   | Shows the players that are in the server (with their name, IP & ping).                                                         |
-| `/rcon banip [IP]`                | Ban the given IP (_example: /rcon banip 127.0.0.1_).                                                                           |
-| `/rcon unbanip [IP]`              | Unban the given IP (_example: /rcon unbanip 127.0.0.1_).                                                                       |
-| `/rcon gravity`                   | Changes the gravity (_example: /rcon gravity 0.008_).                                                                          |
-| `/rcon weather [ID]`              | Changes the weather (_example: /rcon weather 1_).                                                                              |
-| `/rcon loadfs`                    | Loads the given filterscript (_example: /rcon loadfs adminfs_).                                                                |
-| `/rcon weburl [server url]`       | Changes the server URL in the masterlists/SA-MP client                                                                         |
-| `/rcon unloadfs`                  | Unload the given filterscript (_example: /rcon unloadfs adminfs_).                                                             |
-| `/rcon reloadfs`                  | Reloads the given filterscript (_example: /rcon reloadfs adminfs_).                                                            |
-| `/rcon rcon\_password [PASSWORD]` | Change the rcon's password                                                                                                     |
-| `/rcon password [password]`       | Sets/resets the server password                                                                                                |
+| Command                           | Description                                                                                                                                           |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/rcon cmdlist`                   | Shows a list with commands.                                                                                                                           |
+| `/rcon varlist`                   | Shows a list with the current variables.                                                                                                              |
+| `/rcon exit`                      | Closes the server.                                                                                                                                    |
+| `/rcon echo [text]`               | Shows the `[text]` in the console of the server (NOT the client-console in-game).                                                                     |
+| `/rcon hostname [name]`           | change the hostname text (_example: /rcon hostname my server_).                                                                                       |
+| `/rcon gamemodetext [name]`       | change the gamemode text (_example: /rcon gamemodetext my gamemode_).                                                                                 |
+| `/rcon mapname [name]`            | change the map name text (_example: /rcon mapname San Andreas_).                                                                                      |
+| `/rcon exec [filename]`           | Executes the file which contains server cfg (_example: /rcon exec blah.cfg_).                                                                         |
+| `/rcon kick [ID]`                 | Kick the player with the given ID (_example: /rcon kick 2_).                                                                                          |
+| `/rcon ban [ID]`                  | Ban the player with the given ID (_example: /rcon ban 2_).                                                                                            |
+| `/rcon changemode [mode]`         | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_).                        |
+| `/rcon gmx`                       | Will load the next gamemode in [server.cfg](server.cfg).                                                                                              |
+| `/rcon reloadbans`                | Reloads the `samp.ban` file where the banned IP addresses are stored. Should be used after unbanning and IP address.                                  |
+| `/rcon reloadlog`                 | Reloads the `server_log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only).  |
+| `/rcon say`                       | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`).                                        |
+| `/rcon players`                   | Shows the players that are in the server (with their name, IP & ping).                                                                                |
+| `/rcon banip [IP]`                | Ban the given IP (_example: /rcon banip 127.0.0.1_).                                                                                                  |
+| `/rcon unbanip [IP]`              | Unban the given IP (_example: /rcon unbanip 127.0.0.1_).                                                                                              |
+| `/rcon gravity`                   | Changes the gravity (_example: /rcon gravity 0.008_).                                                                                                 |
+| `/rcon weather [ID]`              | Changes the weather (_example: /rcon weather 1_).                                                                                                     |
+| `/rcon loadfs`                    | Loads the given filterscript (_example: /rcon loadfs adminfs_).                                                                                       |
+| `/rcon weburl [server url]`       | Changes the server URL in the masterlists/SA-MP client                                                                                                |
+| `/rcon unloadfs`                  | Unload the given filterscript (_example: /rcon unloadfs adminfs_).                                                                                    |
+| `/rcon reloadfs`                  | Reloads the given filterscript (_example: /rcon reloadfs adminfs_).                                                                                   |
+| `/rcon rcon\_password [PASSWORD]` | Change the rcon's password                                                                                                                            |
+| `/rcon password [password]`       | Sets/resets the server password                                                                                                                       |
 
 **The following commands are only available in 0.3z R2 and above**:
 
@@ -198,10 +198,10 @@ The following callbacks and functions might be useful, as they're related to thi
 
 #### Callbacks
 
-- [OnRconLoginAttempt](../../callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
+- [OnRconLoginAttempt](../scripting/callbacks/OnRconLoginAttempt): Called when an attempt to login to RCON is made.
 
 #### Functions
 
-- [IsPlayerAdmin](../../functions/IsPlayerAdmin): Checks if a player is logged into RCON.
+- [IsPlayerAdmin](../scripting/functions/IsPlayerAdmin): Checks if a player is logged into RCON.
 
-- [SendRconCommand](../../functions/SendRconCommand): Sends an RCON command via the script.
+- [SendRconCommand](../scripting/functions/SendRconCommand): Sends an RCON command via the script.

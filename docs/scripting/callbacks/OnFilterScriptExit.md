@@ -21,4 +21,4 @@ public OnFilterScriptExit()
 }
 ```
 
-## Mga Kaugnay na Functions
+## Related Functions

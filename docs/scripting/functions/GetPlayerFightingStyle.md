@@ -16,7 +16,7 @@ Get the fighting style the player currently using.
 
 ## Returns
 
-The ID of the fighting style of the player.
+The ID of the [fighting style](../resources/fightingstyles) of the player.
 
 ## Examples
 

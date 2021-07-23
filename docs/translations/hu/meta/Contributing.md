@@ -11,7 +11,7 @@ Minden oldalon található egy gomb, amely a GitHub szerkesztés oldalára vezet
 
 ![Edit this page link present on each wiki page](/images/contributing/edit-this-page.png)
 
-Például, ezen az oldalon [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) erre az [oldal](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md)ra juttat el, ahol egy szövegszerkesztővel módosíthatod a fájlokat (feltéve, hogy be vagy jelentkezve a GitHub-ba).
+Például, ezen az oldalon [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) erre az [oldal](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md)ra juttat el, ahol egy szövegszerkesztővel módosíthatod a fájlokat (feltéve, hogy be vagy jelentkezve a GitHub-ba).
 
 Végezzd el a szerkesztést, és küldj be egy "Pull Request" ("Húzási kérelem")-et, ez azt jelenti, hogy a Wiki fenntartói és a közösség többi tagja áttekintheti a változtatást, megbeszélheti, hogy szükség van-e további változtatásokra, majd egyesítheti.
 

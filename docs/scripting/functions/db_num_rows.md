@@ -115,7 +115,7 @@ Using an invalid handle other than zero will crash your server! Get a valid data
 ## Related Functions
 
 - [db_open](db_open): Open a connection to an SQLite database
-- [db_close](b_close): Close the connection to an SQLite database
+- [db_close](db_close): Close the connection to an SQLite database
 - [db_query](db_query): Query an SQLite database
 - [db_free_result](db_free_result): Free result memory from a db_query
 - [db_next_row](db_next_row): Move to the next row

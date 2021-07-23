@@ -16,7 +16,7 @@ This callback is called when a player gives damage to an actor.
 | damaged_actorid | The ID of the actor that received damage.             |
 | amount          | The amount of health/armour damaged_actorid has lost. |
 | weaponid        | The reason that caused the damage.                    |
-| bodypart        | The body part that was hit                            |
+| bodypart        | The [body part](../resources/bodyparts) that was hit   |
 
 ## Returns
 

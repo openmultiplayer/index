@@ -18,7 +18,7 @@ The function gets the number of open database connections for debugging purposes
 ## Related Functions
 
 - [db_open](db_open): Open a connection to an SQLite database
-- [db_close](b_close): Close the connection to an SQLite database
+- [db_close](db_close): Close the connection to an SQLite database
 - [db_query](db_query): Query an SQLite database
 - [db_free_result](db_free_result): Free result memory from a db_query
 - [db_num_rows](db_num_rows): Get the number of rows in a result

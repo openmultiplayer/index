@@ -106,7 +106,7 @@ enum Door
 {
     DOOR_HOOD,
     DOOR_TRUNK,
-    DOOR_DRIVER
+    DOOR_DRIVER,
     DOOR_PASSENGER
 }
 

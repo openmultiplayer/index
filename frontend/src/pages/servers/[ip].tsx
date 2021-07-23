@@ -36,7 +36,7 @@ interface Server {
 
 type Props = {
   ip: string;
-  initialData: Server;
+  initialData?: Server;
 };
 
 const Item = ({ k, v }: { k: string; v: string }) => {
@@ -155,7 +155,7 @@ export const getServerSideProps = async (
   return {
     props: {
       ip: ip,
-      initialData: await getServer(ip),
+      initialData: undefined, // TODO: put this back: await getServer(ip),
     },
   };
 };

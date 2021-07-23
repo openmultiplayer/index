@@ -10,13 +10,13 @@ tags: ["player"]
 
 This callback is called when a player gives damage to another player.
 
-| Name      | Description                                                                                                   |
-| --------- | ------------------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player that gave damage.                                                                        |
-| damagedid | The ID of the player that received damage.                                                                    |
-| amount    | The amount of health/armour damagedid has lost (combined).                                                    |
-| weaponid  | The reason that caused the damage.                                                                            |
-| bodypart  | The body part that was hit. (NOTE: This parameter was added in 0.3z. Leave it out if using an older version!) |
+| Name      | Description                                                                                                                               |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | The ID of the player that gave damage.                                                                                                    |
+| damagedid | The ID of the player that received damage.                                                                                                |
+| amount    | The amount of health/armour damagedid has lost (combined).                                                                                |
+| weaponid  | The reason that caused the damage.                                                                                                        |
+| bodypart  | The [body part](../resources/bodyparts) that was hit. (NOTE: This parameter was added in 0.3z. Leave it out if using an older version!)    |
 
 ## Returns
 

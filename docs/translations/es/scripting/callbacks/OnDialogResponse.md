@@ -20,7 +20,11 @@ Este callback se llama cuando un jugador responde a un cuadro de diálogo mostra
 
 ## Devoluciones
 
-Siempre se llama primero en filterscripts, devolviendo 1 acá va a bloquear a otros filterscripts de verlo.
+1 - Prevendrá a otros filterscripts de recibir este callback.
+
+0 - Indica que este callback será pasado al siguiente filterscript.
+
+Siempre se llama primero en filterscripts.
 
 ## Ejemplos
 

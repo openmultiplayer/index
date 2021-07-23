@@ -2,6 +2,7 @@ package servers
 
 import (
 	"github.com/go-chi/chi"
+	"github.com/go-chi/cors"
 
 	"github.com/openmultiplayer/web/server/src/authentication"
 	"github.com/openmultiplayer/web/server/src/queryer"
@@ -21,12 +22,27 @@ func New(
 	queryer queryer.Queryer,
 	verifier *serververify.Verifyer,
 ) *ServersService {
-	svc := &ServersService{chi.NewRouter(), storer, queryer, verifier}
+	router := chi.NewRouter()
 
-	svc.R.Get("/{address}", svc.get)
-	svc.R.Get("/", svc.list)
-	svc.R.Post("/", svc.add)
-	svc.R.
+	router.Use(
+		cors.Handler(cors.Options{
+			AllowedOrigins: []string{
+				"*", // Any browser instance
+			},
+			AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+			AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
+			ExposedHeaders:   []string{"Link"},
+			AllowCredentials: false,
+			MaxAge:           300,
+		}),
+	)
+
+	svc := &ServersService{router, storer, queryer, verifier}
+
+	router.Get("/{address}", svc.get)
+	router.Get("/", svc.list)
+	router.Post("/", svc.add)
+	router.
 		With(authentication.MustBeAuthenticated).
 		Get("/{address}/vertify", svc.vertify)
 

@@ -8,12 +8,12 @@ tags: ["player"]
 
 Check which keys a player is pressing.
 
-| Name      | Description                                                                                                               |
-| --------- | ------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player to get the keys of.                                                                                  |
-| keys      | A set of bits containing the player's key states. This value is what is called a bit mask. Click here for a list of keys. |
-| updown    | Up/down state.                                                                                                            |
-| leftright | Left/right state.                                                                                                         |
+| Name      | Description                                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | The ID of the player to get the keys of.                                                                                                          |
+| keys      | A set of bits containing the player's key states. This value is what is called a bit mask. [Click here](../resources/keys) for a list of keys.    |
+| updown    | Up/down state.                                                                                                                                    |
+| leftright | Left/right state.                                                                                                                                 |
 
 ## Returns
 

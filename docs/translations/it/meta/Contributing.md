@@ -5,7 +5,7 @@ descrizione: Come contribuire alla documentazione della Wiki di SA-MP e open.mp
 
 Questa documentazione è open-source per chiunque voglia contribuire! Basta solamente un account [GitHub](https://github.com) e del tempo libero. Non hai nemmeno bisogno di conoscere il linguaggio Git, puoi direttamente contribuire dall'interfaccia web!
 
-Se vuoi mantenere una specifica lingua apri una pull request ai [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) del file e aggiungi una linea con la directory della lingua accompagnato al tuo username.
+Se vuoi mantenere una specifica lingua apri una pull request ai [`CODEOWNERS`](https://github.com/openmultiplayer/web/blob/master/CODEOWNERS) del file e aggiungi una linea con la directory della lingua accompagnato al tuo username.
 
 ## Modifica dei contenuti
 
@@ -13,7 +13,7 @@ Su ogni pagina, vi è un bottone che porta alla pagina di GitHub per poterne mod
 
 !['Modifica questa pagina' link presente su ogni pagina della wiki](/images/contributing/edit-this-page.png)
 
-Per esempio, cliccando questo sulla funzione [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) ti porterà a [questa pagina](https://github.com/openmultiplayer/wiki/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) che presenta un text editor per poter effettuare modifiche ad un file (assumendo il fatto che tu sia loggato su GitHub).
+Per esempio, cliccando questo sulla funzione [SetVehicleAngularVelocity](../scripting/functions/SetVehicleAngularVelocity) ti porterà a [questa pagina](https://github.com/openmultiplayer/web/edit/master/docs/scripting/functions/SetVehicleAngularVelocity.md) che presenta un text editor per poter effettuare modifiche ad un file (assumendo il fatto che tu sia loggato su GitHub).
 
 Fai la tua modifica e invia una "Pull request" ciò significa che i mantenitori della wiki e gli altri membri della community potranno revisionare le tue modifiche, discutere qualora vi sia il bisogno di ulteriori modifiche ed effettuare il merge.
 

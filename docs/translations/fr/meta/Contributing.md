@@ -3,7 +3,7 @@ title: Contribuer au rayonnement de open.MP
 description: Contribuez, vous aussi, à améliorer la documentation fournie par open.MP et sa communauté.
 ---
 
-Cette documentation s'adresse à tous ceux qui veulent contribuer au wiki de [openMP](https://open.mp). Il vous suffit d'avoir du temps et libr et un [GitHub](https://github.com), peu importe si vous maîtrisez cet outil ou non.
+Cette documentation s'adresse à tous ceux qui veulent contribuer au wiki de [open.mp](https://open.mp). Il vous suffit d'avoir du temps et libr et un [GitHub](https://github.com), peu importe si vous maîtrisez cet outil ou non.
 
 Dans le cas où vous souhaitez vous voulez participer à la traduction du wiki, ouvrez un PR sur le fichier [`CODEOWNERS`](https://github.com/openmultiplayer/wiki/tree/master/CODEOWNERS) en ajoutant une ligne de la même façon que celles déjà écrites.
 

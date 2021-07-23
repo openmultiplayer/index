@@ -1,24 +1,24 @@
 ---
 title: PlayerSpectatePlayer
-description: Omogućavanje igraču da posmatra (gleda) drugog igrača.
+description: Daje mogućnost igraču da spectate-a (nadgleda) drugog igrača.
 tags: ["player"]
 ---
 
 ## Deskripcija
 
-Omogućavanje igraču da posmatra (gleda) drugog igrača.
+Daje mogućnost igraču da spectate-a (nadgleda) drugog igrača.
 
-| Ime            | Deskripcija                                                                               |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| playerid       | ID igrača koji će posmatrati                                                              |
-| targetplayerid | ID igrača kojeg će igrač posmatrati                                                       |
-| mode           | [mode](../resources/spectatemodes) za posmatranje sa (neobavezno; default na 'normal')    |
+| Ime            | Deskripcija                                                                                                |
+| -------------- | ---------------------------------------------------------------------------------------------------------- |
+| playerid       | ID igrača koji će nadgledati.                                                                              |
+| targetplayerid | ID igrača kojeg će nadgledati.                                                                             |
+| mode           | [Način](../resources/spectatemodes) na koji će nadgledati (neobavezno; po zadanim postavkama na 'normal'). |
 
 ## Returns
 
-1: Funkcija je uspješno izvršena.
+1: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. One of the players specified does not exist.
+0: Funkcija neuspješno izvršena. Jedan od navedenih igrača ne postoji.
 
 ## Primjeri
 
@@ -35,11 +35,11 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 :::warning
 
-Red je presudan! Osigurajte da koristite TogglePlayerSpectating prije PlayerSpectatePlayer. Virtualni svjetovi i interijeri za playerid i targetplayerid moraju biti isti da bi ova funkcija radila kako treba.
+Red je KRITIČNA! Obavezno koristite TogglePlayerSpectating prije PlayerSpectatePlayer. Virtualni svijet i interijer playerida i targetplayerida moraju biti isti da bi ova funkcija radila ispravno.
 
 :::
 
 ## Srodne Funkcije
 
-- [PlayerSpectateVehicle](PlayerSpectateVehicle): Posmatranje vozila.
-- [TogglePlayerSpectating](TogglePlayerSpectating): Započinjanje ili stopiranje posmatranja.
+- [PlayerSpectateVehicle](PlayerSpectateVehicle): Nadgledaj vozilo.
+- [TogglePlayerSpectating](TogglePlayerSpectating): Počni ili prekini spectate-ovati (nadgledati).

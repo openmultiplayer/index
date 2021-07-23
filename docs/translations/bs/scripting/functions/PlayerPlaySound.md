@@ -1,33 +1,33 @@
 ---
 title: PlayerPlaySound
-description: Puštanje određenog zvuka za igrača.
+description: Reprodukuje navedeni zvuk igraču.
 tags: ["player"]
 ---
 
 ## Deskripcija
 
-Puštanje određenog zvuka za igrača.
+Reprodukuje navedeni zvuk igraču.
 
-Za biblioteku koja sadrži sve zvukove, pogledajte [this](https://github.com/WoutProvost/samp-sound-array).
+Pogledajte library koji sadrži sve zvukove, [ovo](https://github.com/WoutProvost/samp-sound-array).
 
-| Ime      | Deskripcija                                                       |
-| -------- | ----------------------------------------------------------------- |
-| playerid | ID igrača za kojeg će se pustiti zvuk                             |
-| soundid  | Zvuk koji će se pustiti                                           |
-| Float:x  | X kordinata za zvuk gdje će se pustiti. (0.0 za nikakvu poziciju) |
-| Float:y  | Y kordinata za zvuk gdje će se pustiti. (0.0 za nikakvu poziciju) |
-| Float:z  | Z kordinata za zvuk gdje će se pustiti. (0.0 za nikakvu poziciju) |
+| Ime      | Deskripcija                                                |
+| -------- | ---------------------------------------------------------- |
+| playerid | ID igrača kojem će se reprodukovati zvuk.                  |
+| soundid  | Zvuk za reprodukovati.                                     |
+| Float:x  | X kordinata za reprodukovanje zvuka. (0.0 za bez pozicije) |
+| Float:y  | Y kordinata za reprodukovanje zvuka. (0.0 za bez pozicije) |
+| Float:z  | Z kordinata za reprodukovanje zvuka. (0.0 za bez pozicije) |
 
 ## Returns
 
-1: Funkcija je uspješno izvršena.
+1: Funkcija uspješno izvršena.
 
 0: Funkcija neuspješno izvršena. Ovo znači da igrač nije konektovan.
 
 ## Primjeri
 
 ```c
-// zvuk udaranja (odgovara za komande poput /slap well). Zvuk će biti tih, kao izvor je zapravo 10 metara iznad igrača.
+// zvuk udaranja igrača (odgovara za naredbe kao što je /slap). Zvuk će biti tih, jer je izvor zapravo 10 metara iznad igrača.
 PlayerPlaySound(playerid, 1130, 0.0, 0.0, 10.0);
 ```
 
@@ -35,12 +35,12 @@ PlayerPlaySound(playerid, 1130, 0.0, 0.0, 10.0);
 
 :::tip
 
-Koristite samo koordinate ako želite da pustite zvuk na određenoj poziciji. Postavite koordinate svima na 0.0 da bi samo pustili zvuk.
+Koristite kordinate samo ako želite da se zvuk reproducira na određenoj poziciji. Postavite kordinatama sve na 0,0 da samo reproducira zvuk.
 
 :::
 
 ## Srodne Funkcije
 
-- [PlayCrimeReportForPlayer](PlayCrimeReportForPlayer): Puštanje izvještaja o zločinu za igrača.
-- [PlayAudioStreamForPlayer](PlayAudioStreamForPlayer): Puštanje audio stream-a za igrača.
-- [StopAudioStreamForPlayer](StopAudioStreamForPlayer): Prekidanje trenutnog audio stream-a za igrača.
+- [PlayCrimeReportForPlayer](PlayCrimeReportForPlayer): Pusti krivičnu prijavu za igrača.
+- [PlayAudioStreamForPlayer](PlayAudioStreamForPlayer): Reprodukuje audio tok za igrača.
+- [StopAudioStreamForPlayer](StopAudioStreamForPlayer): Zaustavlja trenutni audio stream za igrača.

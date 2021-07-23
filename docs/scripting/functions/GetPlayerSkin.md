@@ -14,7 +14,7 @@ Returns the class of the players skin
 
 ## Returns
 
-The skin id (0 if invalid)
+The [skin id](../resources/skins) (0 if invalid)
 
 ## Examples
 
@@ -26,7 +26,7 @@ playerskin = GetPlayerSkin(playerid);
 
 :::tip
 
-Returns the new skin after SetSpawnInfo is called but before the player actually respawns to get the new skin. Returns the old skin if the player was spawned through SpawnPlayer function.
+Returns the new skin after [SetSpawnInfo](SetSpawnInfo) is called but before the player actually respawns to get the new skin. Returns the old skin if the player was spawned through [SpawnPlayer](SpawnPlayer) function.
 
 :::
 

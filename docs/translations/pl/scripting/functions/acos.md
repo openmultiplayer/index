@@ -27,9 +27,9 @@ public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 0.5;
-    result = acos (param) * 180.0 / PI;
-    printf ("Arcus cosinus dla %f wynosi %f stopni.\n", param, result);
-    return 0;
+    result = acos(param);
+    printf("Arcus cosinus dla %f wynosi %f stopni.", param, result);
+    return 1;
 }
 ```
 

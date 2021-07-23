@@ -8,10 +8,10 @@ tags: ["player"]
 
 Set a player's weather.
 
-| Name     | Description                                |
-| -------- | ------------------------------------------ |
-| playerid | The ID of the player whose weather to set. |
-| weather  | The weather to set.                        |
+| Name     | Description                                    |
+| -------- | ---------------------------------------------- |
+| playerid | The ID of the player whose weather to set.     |
+| weather  | The [weather](../resources/weatherid) to set.  |
 
 ## Returns
 

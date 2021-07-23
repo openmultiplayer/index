@@ -28,11 +28,6 @@ export const hydrate = (
     })
   );
 
-  // if we're server-side, we can return the raw output early
-  if (typeof window === "undefined") {
-    return result;
-  }
-
   // if we're on the client side, we hydrate the mdx content inside
   // requestIdleCallback, since we can be fairly confident that
   // markdown - embedded components are not a high priority to get
@@ -74,6 +69,11 @@ export const hydrate = (
       window.cancelIdleCallback(handle);
     });
   }, [compiledSource]);
+
+  // if we're server-side, we can return the raw output early
+  if (typeof window === "undefined") {
+    return result;
+  }
 
   return result;
 };

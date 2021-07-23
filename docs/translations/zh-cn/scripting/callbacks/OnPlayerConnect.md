@@ -40,7 +40,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-这个回调函数也可以由 NPC调用。
+这个回调函数也可以被 NPC调用。
 
 :::
 

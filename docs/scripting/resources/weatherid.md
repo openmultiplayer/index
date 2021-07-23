@@ -32,7 +32,7 @@ There are 21 different weather IDs (0-20), however the game does not feature any
 
 :::note
 
-- Some weathers appear very different at certain times. You can see [here](http://hotmist.ddo.jp/id/weatherhtml) what different weather types look like at different times.
+- Some weathers appear very different at certain times. You can see [here](http://hotmist.ddo.jp/id/weather.html) what different weather types look like at different times.
 
 - [GTA San Andreas weather gallery](https://dev.prineside.com/en/gtasa_weather_id/) explains the situation with weather IDs better than any words. You can also use it if you wish to view weathers at certain times and look for problematic weather that cause strange effects
 

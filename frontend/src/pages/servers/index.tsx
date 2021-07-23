@@ -360,7 +360,7 @@ export const getServerSideProps = async (
 ): Promise<GetServerSidePropsResult<Props>> => {
   let servers: Array<Essential>;
   try {
-    servers = await getServers();
+    servers = []; // TODO: put this back: await getServers();
   } catch (e) {
     return { props: { errorMessage: e.message } };
   }

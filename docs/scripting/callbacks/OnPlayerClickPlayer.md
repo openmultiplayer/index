@@ -14,7 +14,7 @@ Called when a player double-clicks on a player on the scoreboard.
 | --------------- | ---------------------------------------------------------------- |
 | playerid        | The ID of the player that clicked on a player on the scoreboard. |
 | clickedplayerid | The ID of the player that was clicked on.                        |
-| source          | The source of the player's click.                                |
+| source          | The [source](../resources/clicksources) of the player's click.   |
 
 ## Returns
 

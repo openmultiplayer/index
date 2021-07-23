@@ -8,12 +8,12 @@ tags: ["player"]
 
 Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in the 'SMG' slot).
 
-| Name     | Description                                                      |
-| -------- | ---------------------------------------------------------------- |
-| playerid | The ID of the player whose weapon data to retrieve.              |
-| slot     | The weapon slot to get data for (0-12).                          |
-| &weapons | A variable in which to store the weapon ID, passed by reference. |
-| &ammo    | A variable in which to store the ammo, passed by reference.      |
+| Name     | Description                                                                                |
+| -------- | ------------------------------------------------------------------------------------------ |
+| playerid | The ID of the player whose weapon data to retrieve.                                        |
+| slot     | The weapon slot to get data for (0-12).                                                    |
+| &weapons | A variable in which to store the [weapon ID](../resources/weaponids), passed by reference. |
+| &ammo    | A variable in which to store the ammo, passed by reference.                                |
 
 ## Returns
 

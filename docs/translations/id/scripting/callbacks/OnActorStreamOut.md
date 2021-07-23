@@ -12,7 +12,7 @@ Fungsi ini telah ditambahkan dalam SA-MP 0.3.7 dan tidak bekerja pada versi diba
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika sebuah aktor berada di jangkauan stream dari klien pemain.
+Callback ini akan terpanggil ketika sebuah aktor keluar di jangkauan stream dari klien pemain.
 
 | Nama        | Deskripsi                                                         |
 | ----------- | ----------------------------------------------------------------- |

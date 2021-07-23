@@ -21,11 +21,11 @@ tags: []
 | Btyes sent                                               | The amount of data (in bytes) sent.                                                  |
 | Acks sent                                                | The number of acks sent (acknowledge receipt of a packet).                           |
 | Acks in send buffer                                      | Number of acks waiting to be sent (acknowledge receipt of a packet).                 |
-| Messages waiting for ack                                 | Number of messages that are waiting to be acknowledged as recieved.                  |
-| Messages resent                                          | Messages resent (packetloss?).                                                       |
+| Messages waiting for ack                                 | Number of messages that are waiting to be acknowledged as received.                  |
+| Messages resent                                          | Number of messages resent after a lack of acknowledge. Client is trying to reconnect after 109 messages resent.|
 | Bytes resent                                             | The amount of data resent (in bytes).                                                |
-| Packetloss                                               | The percentage of packets that were sent but never recieved by the other end (lost). |
-| Messages recieved                                        | The number of network messages recieved from the server.                             |
-| Bytes recieved                                           | The amount of data recieved (in bytes).                                              |
-| Acks recieved                                            | Number of acks recieved (acknowledge receipt of a packet).                           |
-| Duplicate acks recieved                                  | Number of duplicate (already recieved) acks recieved.                                |
+| Packetloss                                               | The percentage of packets that were sent but never received by the other end (lost). |
+| Messages received                                        | The number of network messages received from the server.                             |
+| Bytes received                                           | The amount of data received (in bytes).                                              |
+| Acks received                                            | Number of acks received (acknowledge receipt of a packet).                           |
+| Duplicate acks received                                  | Number of duplicate (already received) acks received.                                |

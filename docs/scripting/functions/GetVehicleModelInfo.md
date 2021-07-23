@@ -10,13 +10,13 @@ tags: ["vehicle"]
 
 Retrieve information about a specific vehicle model such as the size or position of seats
 
-| Name         | Description                          |
-| ------------ | ------------------------------------ |
-| vehiclemodel | The vehicle model to get info of.    |
-| infotype     | The type of information to retrieve. |
-| &Float:X     | A float to store the X value.        |
-| &Float:Y     | A float to store the Y value.        |
-| &Float:Z     | A float to store the Z value.        |
+| Name         | Description                          											|
+| ------------ | ------------------------------------------------------------------------------ |
+| vehiclemodel | The vehicle model to get info of.    											|
+| infotype     | The [type of information](../resources/vehicleinformationtypes) to retrieve.	|
+| &Float:X     | A float to store the X value.        											|
+| &Float:Y     | A float to store the Y value.        											|
+| &Float:Z     | A float to store the Z value.        											|
 
 ## Returns
 

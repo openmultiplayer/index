@@ -13,7 +13,7 @@ For a library that lists all sounds, check out [this](https://github.com/WoutPro
 | Name     | Description                                                  |
 | -------- | ------------------------------------------------------------ |
 | playerid | The ID of the player for whom to play the sound.             |
-| soundid  | The sound to play.                                           |
+| soundid  | The [sound](../resources/sound-ids) to play.                 |
 | Float:x  | X coordinate for the sound to play at. (0.0 for no position) |
 | Float:y  | Y coordinate for the sound to play at. (0.0 for no position) |
 | Float:z  | Z coordinate for the sound to play at. (0.0 for no position) |

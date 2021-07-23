@@ -4,7 +4,7 @@ title: Common Issues
 
 ## Server instantly crashes when started
 
-Most commonly it's an error in your server.cfg file or your gamemode is missing. Check the server_log.txt file and the reason should be located at the bottom. If not, check crashinfo.txt file. The better solution to find out what is causing the crash is using the Crash detect plugin by Zeex/0x5A656578 [click for link](http://forum.sa-mp.com/showthread.php?t=262796 "http://forum.sa-mp.com/showthread.php?t=262796") which will give more information like line numbers, function names, parameter values, etc. If the script is compiled in debug mode (-d3 flag) to make compiler put extra information about all that stuff into the output .amx.
+Most commonly it's an error in your server.cfg file or your gamemode is missing. Check the server_log.txt file and the reason should be located at the bottom. If not, check crashinfo.txt file. The better solution to find out what is causing the crash is using the Crash detect plugin by Zeex/0x5A656578 [click for link](http://web-old.archive.org/web/20190419110430/https://forum.sa-mp.com/showthread.php?t=262796) which will give more information like line numbers, function names, parameter values, etc. If the script is compiled in debug mode (-d3 flag) to make compiler put extra information about all that stuff into the output .amx.
 
 ## Server is not working - firewall is disabled
 
@@ -62,7 +62,7 @@ Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit:
 
 Happens when 'out of order messages' reuses messageholelimit setting.
 
-For more information about this, refer to [this](http://wiki.sa-mp.com/wiki/Controlling_Your_Server#RCON_Commands)
+For more information about this, refer to [this](https://open.mp/docs/server/ControllingServer#RCON_Commands)
 
 ## Players constantly getting "Unacceptable NickName" error but it is valid
 

@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Description
 
-Reset a player's money to \$0.
+Reset a player's money to $0.
 
 | Name     | Description                                 |
 | -------- | ------------------------------------------- |

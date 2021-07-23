@@ -6,7 +6,7 @@ title: سبک های دیالوگ
 
 :::note نکته
 
-- در [OnDialogResponse](../callbacks/OnDialogResponse) فشردن **button1** باعث میشود **response** **1** باشد، اگر **button2** فشرده شود باعث میشود **response** **1** شود.
+- در [OnDialogResponse](../callbacks/OnDialogResponse) فشردن **button1** باعث میشود **response** **1** باشد، اگر **button2** فشرده شود باعث میشود **response** **0** شود.
 - هر دیالوگ میتواند دو دکمه داشته باشید. برای اینکه دکمه نشان داده نشود آن را خالی بگذارید، مثل مثال اول. پلیر ها قادر نخواهند بود بر روی آن دکمه کلیک کنند اما آن ها قادر خواند بود با فشردن دکمه ESC [OnDialogResponse](../callbacks/OnDialogResponse) را با **response** = **0** فرا بخوانند.
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): روش color-embedding میتواند برای هر string استفاده شود : **caption**, **info**, **button1** و **button2**.
 :::

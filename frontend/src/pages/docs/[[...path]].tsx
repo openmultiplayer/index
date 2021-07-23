@@ -23,6 +23,15 @@ const Page = (props: Props) => {
 
   useEffect(() => setIsMounted(true), []);
 
+  // hydrate contains hook calls, and hooks must always be called
+  // unconditionally. Because they are called from a regular function here and
+  // not a nested component, the unconditionality applies to the call stack of
+  // *this* component, so the content must be hydrated regardless of whether or
+  // not there was an error in the following if-statement.
+  const content =
+    props.source &&
+    hydrate(props.source, { components: components as Components });
+
   if (props.error) {
     return (
       <section className="mw7 pa3 measure-wide center">
@@ -31,10 +40,6 @@ const Page = (props: Props) => {
       </section>
     );
   }
-
-  const content =
-    props.source &&
-    hydrate(props.source, { components: components as Components });
 
   return (
     <div className="flex flex-column flex-auto items-stretch">
@@ -160,7 +165,8 @@ export async function getStaticPaths(
     concat(walk("../docs")),
 
     // Filter out translations directory - these are handled separately
-    filter((v: string) => v.indexOf("translations") === -1),
+    // NOTE: Currently this is not the case, these are built statically too.
+    // filter((v: string) => v.indexOf("translations") === -1),
 
     // Filter out category content pages
     filter((v: string) => !v.endsWith("_.md")),

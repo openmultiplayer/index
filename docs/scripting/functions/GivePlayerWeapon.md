@@ -8,11 +8,11 @@ tags: ["player"]
 
 Give a player a weapon with a specified amount of ammo.
 
-| Name     | Description                                 |
-| -------- | ------------------------------------------- |
-| playerid | The ID of the player to give a weapon to.   |
-| weaponid | The ID of the weapon to give to the player. |
-| ammo     | The amount of ammo to give to the player.   |
+| Name     | Description                                                            |
+| -------- | ---------------------------------------------------------------------- |
+| playerid | The ID of the player to give a weapon to.                              |
+| weaponid | The [ID of the weapon](../resources/weaponids) to give to the player.  |
+| ammo     | The amount of ammo to give to the player.                              |
 
 ## Returns
 

@@ -10,10 +10,10 @@ tags: ["player"]
 
 Loads or unloads an interior script for a player (for example the ammunation menu).
 
-| Name       | Description                                                  |
-| ---------- | ------------------------------------------------------------ |
-| playerid   | The ID of the player to load the interior script for.        |
-| shopname[] | The shop script to load. Leave blank ("") to unload scripts. |
+| Name       | Description                                                                              |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| playerid   | The ID of the player to load the interior script for.                                    |
+| shopname[] | The [shop script](../resources/shopnames) to load. Leave blank ("") to unload scripts.   |
 
 ## Returns
 

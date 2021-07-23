@@ -1,6 +1,6 @@
 ---
 title: atan
-description: Get the inversed value of an arc tangent in radians.
+description: Get the inversed value of a tangent in degrees.
 tags: ["math"]
 ---
 
@@ -8,28 +8,28 @@ tags: ["math"]
 
 ## Description
 
-Get the inversed value of an arc tangent in radians.
+Get the inversed value of a tangent in degrees. In trigonometrics, arc tangent is the inverse operation of tangent. Notice that because of the sign ambiguity, the function cannot determine with certainty in which quadrant the angle falls only by its tangent value. See [atan2](atan2) for an alternative that takes a fractional argument instead.
 
-| Name        | Description                |
-| ----------- | -------------------------- |
-| Float:value | the input in arc tangents. |
+| Name        | Description                          |
+| ----------- | ------------------------------------ |
+| Float:value | value whose arc tangent is computed. |
 
 ## Returns
 
-The radiant of the angle in radians.
+The angle in degrees, in the interval [-90.0,+90.0].
 
 ## Examples
 
 ```c
-//This function returns radiants. Because most SA-MP functions use degrees, it is advised to convert them using the formula: result = atan (param) * 180 / PI
+//The arc tangent of 1.000000 is 45.000000 degrees.
 
 public OnGameModeInit()
 {
     new Float:param, Float:result;
     param = 1.0;
-    result = atan(param) * 180 / 3.14159265; //1 radian equals 180 degrees. 3.14... is used to define PI.
-    printf ("The arc tangent of %f is %f degrees\n", param, result );
-    return 0;
+    result = atan(param);
+    printf("The arc tangent of %f is %f degrees.", param, result);
+    return 1;
 }
 ```
 
@@ -38,3 +38,6 @@ public OnGameModeInit()
 - [floatsin](floatsin): Get the sine from a specific angle.
 - [floatcos](floatcos): Get the cosine from a specific angle.
 - [floattan](floattan): Get the tangent from a specific angle.
+- [asin](asin): Get the inversed value of a sine in degrees.
+- [acos](acos): Get the inversed value of a cosine in degrees.
+- [atan2](atan2): Get the multi-valued inversed value of a tangent in degrees.

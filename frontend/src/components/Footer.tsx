@@ -10,7 +10,9 @@ const footerList = (heading: string, items: Array<Item>) => (
       {map(([path, name]) => (
         <li key={path}>
           <Link href={path}>
-            <a className="link near-white hover-white" target="_blank">{name}</a>
+            <a className="link near-white hover-white" target="_blank">
+              {name}
+            </a>
           </Link>
         </li>
       ))(items)}
@@ -38,6 +40,8 @@ const Footer = () => (
         ["https://discord.gg/samp", "Discord"],
         ["https://instagram.com/openmultiplayer/", "Instagram"],
         ["https://twitter.com/openmultiplayer", "Twitter"],
+        ["https://twitch.tv/openmultiplayer", "Twitch"],
+        ["https://youtube.com/openmultiplayer", "YouTube"],
         ["https://facebook.com/openmultiplayer", "Facebook"],
         ["https://vk.com/open_mp", "VK"],
       ])}
