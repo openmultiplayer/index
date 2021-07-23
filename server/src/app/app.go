@@ -17,6 +17,10 @@ import (
 	"github.com/openmultiplayer/web/server/src/docsindex"
 	"github.com/openmultiplayer/web/server/src/mailer"
 	"github.com/openmultiplayer/web/server/src/mailworker"
+	"github.com/openmultiplayer/web/server/src/pkgscraper"
+	"github.com/openmultiplayer/web/server/src/pkgsearcher"
+	"github.com/openmultiplayer/web/server/src/pkgstorage"
+	"github.com/openmultiplayer/web/server/src/pkgworker"
 	"github.com/openmultiplayer/web/server/src/pubsub"
 	"github.com/openmultiplayer/web/server/src/queryer"
 	"github.com/openmultiplayer/web/server/src/scraper"
@@ -34,6 +38,7 @@ func Start(ctx context.Context) error {
 			config.New,
 			NewDatabase,
 			pubsub.NewRabbit,
+			NewGitHubClient,
 			mailer.NewSendGrid,
 			docsindex.New,
 			authentication.New,
@@ -42,6 +47,10 @@ func Start(ctx context.Context) error {
 			queryer.NewSAMPQueryer,
 			serververify.New,
 			scraper.NewPooledScraper,
+			pkgstorage.New,
+			pkgsearcher.NewGitHubSearcher,
+			pkgscraper.NewGitHubScraper,
+			pkgworker.NewPackageWorker,
 			serverworker.New,
 			authentication.NewGitHubProvider,
 			authentication.NewDiscordProvider,
@@ -68,6 +77,7 @@ func Start(ctx context.Context) error {
 
 				// The router to mount the service handlers onto.
 				router chi.Router,
+				_ *pkgworker.PackageWorker,
 			) {
 				router.Mount("/", legacyService.R)
 				router.Mount("/server", serversService.R)

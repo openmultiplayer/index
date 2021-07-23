@@ -22,8 +22,11 @@ services:
       DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID}
       DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET}
       SENDGRID_API_KEY: ${SENDGRID_API_KEY}
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
     ports:
       - 8080:80
+    volumes:
+      - ${DATA_DIR}/openmp-index/backend:/data
     networks:
       - default
       - database
